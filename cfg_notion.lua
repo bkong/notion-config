@@ -3,16 +3,16 @@
 --
 -- This file only includes some settings that are rather frequently altered.
 -- The rest of the settings are in cfg_notioncore.lua and individual modules'
--- configuration files (cfg_modulename.lua). 
+-- configuration files (cfg_modulename.lua).
 
-META="Mod4+"
---ALTMETA=""
+META="Mod1+"
+ALTMETA="Mod4+"
 
 -- Terminal emulator
 if os and os.execute("test -x /usr/bin/urxvt") == 0 then
     XTERM="/usr/bin/urxvt -sk -sr -si -sl 5000 -scrollstyle plain -urgentOnBell"
 else
-    XTERM="/usr/bin/xterm"
+    XTERM="/usr/bin/xfce4-terminal"
 end
 
 -- Program launcher
