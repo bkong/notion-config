@@ -37,7 +37,7 @@ mod_statusbar.create{
     -- windows and icons.
     --
     --template="[ %date || load: %load ] %filler%systray",
-    template="%systray%filler%systray_stalone [ load: %load || %date ]",
+    template="%filler%systray [ load: %load || %date ]",
     --template="[ %date || load:% %>load || mail:% %>mail_new/%>mail_total ] %filler%systray",
     --template="[ %date || load: %05load_1min || mail: %02mail_new/%02mail_total ] %filler%systray",
 }
@@ -86,8 +86,3 @@ mod_statusbar.launch_statusd{
         --files={},
     },
 }
-
-defwinprop{class="stalonetray",instance="stalonetray",statusbar="systray_stalone"}
-defwinprop{instance="stalonetray",statusbar="systray_stalone"}
-defwinprop{class="stalonetray",statusbar="systray_stalone"}
-defwinprop{is_dockapp=true,target="systray_stalone"}
