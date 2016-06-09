@@ -17,3 +17,5 @@ dopath("mod_menu")
 dopath("mod_tiling")
 dopath("mod_statusbar")
 dopath("mod_sp")
+
+dopath("net_client_list")
