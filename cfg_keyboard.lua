@@ -116,6 +116,9 @@ defbindings("WMPlex.toplevel", {
     -- (_chld) is a group 'bottom' and detaches the whole group in that
     -- case.
     kpress(META.."D", "ioncore.detach(_chld, 'toggle')", "_chld:non-nil"),
+
+    bdoc("Lock screen."),
+    kpress(ALTMETA.."Control+L", "ioncore.exec_on(_, notioncore.lookup_script('notion-lock'))"),
     
 })
 
