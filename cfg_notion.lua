@@ -12,7 +12,7 @@ ALTMETA="Mod4+"
 if os and os.execute("test -x /usr/bin/urxvt") == 0 then
     XTERM="/usr/bin/urxvt -sk -sr -si -sl 5000 -scrollstyle plain -urgentOnBell"
 else
-    XTERM="/usr/bin/xfce4-terminal"
+    XTERM="/usr/bin/sakura"
 end
 
 -- Program launcher
